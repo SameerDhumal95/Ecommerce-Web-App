@@ -31,8 +31,8 @@ namespace ShoppingCart.Web.Areas.Admin.Controllers
             }
             else
             {
-                vm.category = _unitOfWork.Category.GetT(x => x.Id == id);
-                if (vm.category == null)
+                vm.Category = _unitOfWork.Category.GetT(x => x.Id == id);
+                if (vm.Category == null)
                 {
                     return NotFound();
                 }
@@ -49,14 +49,14 @@ namespace ShoppingCart.Web.Areas.Admin.Controllers
         {
             if(ModelState.IsValid)
             {
-                if(vm.category.Id == 0)
+                if(vm.Category.Id == 0)
                 {
-                    _unitOfWork.Category.Add(vm.category);
+                    _unitOfWork.Category.Add(vm.Category);
                     TempData["success"] = "Category Created Done!";
                 }
                 else
                 {
-                    _unitOfWork.Category.Update(vm.category);
+                    _unitOfWork.Category.Update(vm.Category);
                     TempData["Success"] = "Category Update Done!";
                 }
 

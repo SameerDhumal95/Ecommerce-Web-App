@@ -15,15 +15,12 @@ namespace ShoppingCart.DataAccess.Repositories
 
         public IProductRepository Product {  get;private set; }
 
-        public UnitOfWork() //default constructor
-        {
+        
 
-        }
-
-        public UnitOfWork(ApplicationDbContext context, ICategoryRepository category, IProductRepository product)
+        public UnitOfWork(ApplicationDbContext context)
         {
             _context = context;
-            Category = new CategoryRepository(context);
+            this.Category = new CategoryRepository(context);
             Product = new ProductRepository(context);
         }
 
