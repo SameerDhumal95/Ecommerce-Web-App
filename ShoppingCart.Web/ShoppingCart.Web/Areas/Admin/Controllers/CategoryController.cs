@@ -83,9 +83,8 @@ namespace ShoppingCart.Web.Areas.Admin.Controllers
                 return View(category);
             
         }
-
         [HttpPost,ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]    
         public IActionResult DeleteData(int? id) 
         {
             var category = _unitOfWork.Category.GetT(x => x.Id == id);
