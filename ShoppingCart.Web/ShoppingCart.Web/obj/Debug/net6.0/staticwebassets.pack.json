@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\js\\Product.js",
+      "PackagePath": "staticwebassets\\js\\Product.js"
+    },
+    {
       "Id": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
