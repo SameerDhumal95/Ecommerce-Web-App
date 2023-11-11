@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace ShoppingCart.DataAccess.Repositories
 {
-    public interface ICategoryRepository:IRepository<Category>
+    public interface ICategoryRepository : IRepository<Category>
     {
-        
-            void Update(Category category);
-        
+
+        void Update(Category category);
+
     }
 }

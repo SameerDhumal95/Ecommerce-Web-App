@@ -21,5 +21,8 @@ namespace ShoppingCart.Models
 
         public DateTime CreateDateTime { get; set; } = DateTime.Now;
 
+        
+        
+
     }
 }

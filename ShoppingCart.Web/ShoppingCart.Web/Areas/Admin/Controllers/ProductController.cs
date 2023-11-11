@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Newtonsoft.Json.Linq;
 using NuGet.Protocol.Plugins;
 using ShoppingCart.DataAccess.Repositories;
 using ShoppingCart.DataAccess.ViewModels;
 using ShoppingCart.Models;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ShoppingCart.Web.Areas.Admin.Controllers
 {
@@ -24,7 +26,7 @@ namespace ShoppingCart.Web.Areas.Admin.Controllers
         #region APICALL
         public IActionResult AllProducts()
         {
-            var products = _unitOfWork.Product.GetAll(includeProperties:"Category");
+            var products = _unitOfWork.Product.GetAll(includeProperties: "Category");
             return Json(new { data = products });
         }
 
@@ -35,6 +37,7 @@ namespace ShoppingCart.Web.Areas.Admin.Controllers
         {
             //ProductVM productVM = new ProductVM();
             //productVM.Products = _unitofWork.Product.GetAll();
+            //
             return View();
         }
 
@@ -64,16 +67,21 @@ namespace ShoppingCart.Web.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult CreateUpdate(int? id)
         {
+
             ProductVM vm = new ProductVM()
             {
                 Product = new(),
-                    Categories = _unitOfWork.Category.GetAll().Select(x =>
-                    new SelectListItem()
-                    {
-                        Text = x.Name,
-                        Value = x.Id.ToString()
-                    })
+                Categories = _unitOfWork.Category.GetAll().Select(x =>
+                new SelectListItem()
+                {
+                    Text = x.Name,
+                    Value = x.Id.ToString()
+                })
+
             };
+
+            
+
             if (id == null || id == 0)
             {
                 return View(vm);
@@ -91,7 +99,6 @@ namespace ShoppingCart.Web.Areas.Admin.Controllers
                     return View(vm);
                 }
             }
-
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -156,22 +163,22 @@ namespace ShoppingCart.Web.Areas.Admin.Controllers
         [HttpDelete]
         public IActionResult Delete(int? id)
         {
-            var product = _unitOfWork.Product.GetT(x=>x.Id==id);
-            if(product ==null)
+            var product = _unitOfWork.Product.GetT(x => x.Id == id);
+            if (product == null)
             {
                 return Json(new { success = false, message = "Error in Fetching Data" });
             }
             else
             {
                 var oldImagePath = Path.Combine(_hostingEnvironment.WebRootPath, product.ImageUrl.TrimStart('\\'));
-                if(System.IO.File.Exists(oldImagePath))
+                if (System.IO.File.Exists(oldImagePath))
                 {
                     System.IO.File.Delete(oldImagePath);
                 }
                 _unitOfWork.Product.Delete(product);
                 _unitOfWork.Save();
                 return Json(new { success = true, message = "Product Deleted" });
-            }    
+            }
         }
         #endregion
     }

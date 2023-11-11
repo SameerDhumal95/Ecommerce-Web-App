@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ShoppingCart.DataAccess.Repositories
 {
-    public interface IUnitOfWork 
+    public interface IUnitOfWork
     {
         ICategoryRepository Category { get; }
         IProductRepository Product { get; }
-        
+
 
         void Save();
     }

@@ -47,9 +47,9 @@ namespace ShoppingCart.Web.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult CreateUpdate(CategoryVM vm)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                if(vm.Category.Id == 0)
+                if (vm.Category.Id == 0)
                 {
                     _unitOfWork.Category.Add(vm.Category);
                     TempData["success"] = "Category Created Done!";
@@ -70,22 +70,22 @@ namespace ShoppingCart.Web.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Delete(int? id)
         {
-            if(id==null || id ==0)
+            if (id == null || id == 0)
             {
-                return NotFound() ;
+                return NotFound();
             }
-            var category = _unitOfWork.Category.GetT(x=>x.Id==id);
+            var category = _unitOfWork.Category.GetT(x => x.Id == id);
             if (category == null)
             {
                 return NotFound();
             }
-            
-                return View(category);
-            
+
+            return View(category);
+
         }
-        [HttpPost,ActionName("Delete")]
-        [ValidateAntiForgeryToken]    
-        public IActionResult DeleteData(int? id) 
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteData(int? id)
         {
             var category = _unitOfWork.Category.GetT(x => x.Id == id);
             if (category == null)

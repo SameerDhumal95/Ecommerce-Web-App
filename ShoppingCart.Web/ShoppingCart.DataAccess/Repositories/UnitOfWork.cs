@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace ShoppingCart.DataAccess.Repositories
 {
-    public class UnitOfWork:IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private ApplicationDbContext _context;
 
-        public ICategoryRepository Category {  get;private set; }
+        public ICategoryRepository Category { get; private set; }
 
-        public IProductRepository Product {  get;private set; }
+        public IProductRepository Product { get; private set; }
 
-        
+
 
         public UnitOfWork(ApplicationDbContext context)
         {

@@ -35,19 +35,19 @@ namespace ShoppingCart.DataAccess.Repositories
             _dbSet.RemoveRange(entity);
         }
 
-        public IEnumerable<T> GetAll(Expression<Func<T,bool>>?predicate=null
-            ,string?includeProperties = null)
+        public IEnumerable<T> GetAll(Expression<Func<T, bool>>? predicate = null
+            , string? includeProperties = null)
         {
             IQueryable<T> query = _dbSet;
 
-            if(predicate != null)
+            if (predicate != null)
             {
                 query = query.Where(predicate);
             }
 
-            if(includeProperties != null)
+            if (includeProperties != null)
             {
-                foreach(var item in includeProperties.Split(new char [] {','},StringSplitOptions.RemoveEmptyEntries))
+                foreach (var item in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                 {
                     query = query.Include(item);
                 }
@@ -55,13 +55,13 @@ namespace ShoppingCart.DataAccess.Repositories
             return query.ToList();
         }
 
-        public T GetT(Expression<Func<T,bool>> predicate,string?includeProperties=null)
+        public T GetT(Expression<Func<T, bool>> predicate, string? includeProperties = null)
         {
             IQueryable<T> query = _dbSet;
             query = query.Where(predicate);
-            if(includeProperties != null)
+            if (includeProperties != null)
             {
-                foreach (var item in includeProperties.Split(new char [] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                foreach (var item in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                 {
                     query = query.Include(item);
                 }

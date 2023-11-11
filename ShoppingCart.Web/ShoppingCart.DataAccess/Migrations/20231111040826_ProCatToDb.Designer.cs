@@ -11,7 +11,7 @@ using ShoppingCart.DataAccess.Data;
 namespace ShoppingCart.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231030050415_ProCatToDb")]
+    [Migration("20231111040826_ProCatToDb")]
     partial class ProCatToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,10 +48,6 @@ namespace ShoppingCart.DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Category")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
@@ -72,7 +68,20 @@ namespace ShoppingCart.DataAccess.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CategoryId");
+
                     b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("ShoppingCart.Models.Product", b =>
+                {
+                    b.HasOne("ShoppingCart.Models.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
                 });
 #pragma warning restore 612, 618
         }
