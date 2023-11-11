@@ -1,0 +1,11 @@
+D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Utility\bin\Debug\net6.0\ShoppingCart.Utility.deps.json
+D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Utility\bin\Debug\net6.0\ShoppingCart.Utility.dll
+D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Utility\bin\Debug\net6.0\ShoppingCart.Utility.pdb
+D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Utility\obj\Debug\net6.0\ShoppingCart.Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Utility\obj\Debug\net6.0\ShoppingCart.Utility.AssemblyInfoInputs.cache
+D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Utility\obj\Debug\net6.0\ShoppingCart.Utility.AssemblyInfo.cs
+D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Utility\obj\Debug\net6.0\ShoppingCart.Utility.csproj.CoreCompileInputs.cache
+D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Utility\obj\Debug\net6.0\ShoppingCart.Utility.dll
+D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Utility\obj\Debug\net6.0\refint\ShoppingCart.Utility.dll
+D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Utility\obj\Debug\net6.0\ShoppingCart.Utility.pdb
+D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Utility\obj\Debug\net6.0\ref\ShoppingCart.Utility.dll

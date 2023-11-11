@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FYVqwy7B2ljd5c0cWlFu+fIy/pRfMQUTCYed+Ef/97e4GpA9lhe2xmFV3QG/f18EWr4Tct3mfeQcPEUVrVKrAg==",
+  "dgSpecHash": "XL1KnkZMIbhDvEMcPqcdjMeAh0/UJ0sl/44fMRSqSY7nWGY6NJynCpbeAL3H8csADOtZtID5w/Hi/0VH6OZD3Q==",
   "success": true,
-  "projectFilePath": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web.csproj",
+  "projectFilePath": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sameer-PC\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Sameer-PC\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
