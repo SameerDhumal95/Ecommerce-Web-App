@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\ShoppingCart.Web.bundle.scp.css"
     },
     {
+      "Id": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\ProductImage\\8ddfe029-bb9b-41f0-a5ce-05c1108c971c-Wired-Earphone.jpg",
+      "PackagePath": "staticwebassets\\ProductImage\\8ddfe029-bb9b-41f0-a5ce-05c1108c971c-Wired-Earphone.jpg"
+    },
+    {
       "Id": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\css\\Sketchy.css",
       "PackagePath": "staticwebassets\\css\\Sketchy.css"
     },

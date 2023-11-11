@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "99a96Nn5HyN8X6OUYjJEHTXiq6jqTIRJL/CiSsg+1dk=",
+  "Hash": "x2M7Mb/xFgsRGPTUF6J1VmAVedco60AKjk5snInKpmI=",
   "Source": "ShoppingCart.Web",
   "BasePath": "_content/ShoppingCart.Web",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\ProductImage\\8ddfe029-bb9b-41f0-a5ce-05c1108c971c-Wired-Earphone.jpg",
+      "SourceId": "ShoppingCart.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\",
+      "BasePath": "_content/ShoppingCart.Web",
+      "RelativePath": "ProductImage/8ddfe029-bb9b-41f0-a5ce-05c1108c971c-Wired-Earphone.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImage\\8ddfe029-bb9b-41f0-a5ce-05c1108c971c-Wired-Earphone.jpg"
     }
   ]
 }
