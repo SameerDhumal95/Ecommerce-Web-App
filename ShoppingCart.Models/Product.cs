@@ -28,5 +28,5 @@ namespace ShoppingCart.Models
         [ValidateNever]
 
         public Category Category { get; set; }
-    }//
+    }
 }
