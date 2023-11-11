@@ -113,18 +113,21 @@ namespace ShoppingCart.Web.Areas.Admin.Controllers
                     fileName = Guid.NewGuid().ToString() + "-" + file.FileName;
                     string filePath = Path.Combine(uploadDir, fileName);
 
-                    if (vm.Product.ImageUrl == null)
+                    if (!string.IsNullOrEmpty(vm.Product.ImageUrl))
                     {
-                        var oldImagePath = Path.Combine(_hostingEnvironment.WebRootPath, vm.Product.ImageUrl.TrimStart('\\'));
+                        var oldImagePath = Path.Combine(_hostingEnvironment.WebRootPath,
+                            vm.Product.ImageUrl.TrimStart('\\'));
                         if (System.IO.File.Exists(oldImagePath))
                         {
                             System.IO.File.Delete(oldImagePath);
                         }
                     }
-                    using (var fileStram = new FileStream(filePath, FileMode.Create))
+
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
                     {
-                        file.CopyTo(fileStram);
+                        file.CopyTo(fileStream);
                     }
+
                     vm.Product.ImageUrl = @"\ProductImage\" + fileName;
                 }
                 if (vm.Product.Id == 0)
