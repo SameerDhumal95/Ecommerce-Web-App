@@ -480,3 +480,8 @@ D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Web\ShoppingCart.Web\obj\Debug\
 D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Web\ShoppingCart.Web\obj\Debug\net6.0\ShoppingCart.Web.pdb
 D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Web\ShoppingCart.Web\obj\Debug\net6.0\ShoppingCart.Web.genruntimeconfig.cache
 D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Web\ShoppingCart.Web\obj\Debug\net6.0\ref\ShoppingCart.Web.dll
+D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Web\ShoppingCart.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Web\ShoppingCart.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Web\ShoppingCart.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Web\ShoppingCart.Web\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Web\ShoppingCart.Web\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

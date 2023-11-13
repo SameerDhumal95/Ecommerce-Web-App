@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "x2M7Mb/xFgsRGPTUF6J1VmAVedco60AKjk5snInKpmI=",
+  "Hash": "v24yZDJlW4eKXQjo13Yybh8wQ1iHuKE1pokK6X5ioo0=",
   "Source": "ShoppingCart.Web",
   "BasePath": "_content/ShoppingCart.Web",
   "Mode": "Default",
@@ -1105,6 +1105,23 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+      "Identity": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\ProductImage\\3a4ba824-8cd4-4198-bd6c-e294891a8687-jbl-xtreme-2-original-imafjf6kbpfwekqd.webp",
+      "SourceId": "ShoppingCart.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\",
+      "BasePath": "_content/ShoppingCart.Web",
+      "RelativePath": "ProductImage/3a4ba824-8cd4-4198-bd6c-e294891a8687-jbl-xtreme-2-original-imafjf6kbpfwekqd.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImage\\3a4ba824-8cd4-4198-bd6c-e294891a8687-jbl-xtreme-2-original-imafjf6kbpfwekqd.webp"
+    },
+    {
       "Identity": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\ProductImage\\8ddfe029-bb9b-41f0-a5ce-05c1108c971c-Wired-Earphone.jpg",
       "SourceId": "ShoppingCart.Web",
       "SourceType": "Discovered",
@@ -1120,6 +1137,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ProductImage\\8ddfe029-bb9b-41f0-a5ce-05c1108c971c-Wired-Earphone.jpg"
+    },
+    {
+      "Identity": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\ProductImage\\9bfa2352-5e03-46a0-8e0d-3bb0c62291d0-261151_c9cqcw.jpg",
+      "SourceId": "ShoppingCart.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\",
+      "BasePath": "_content/ShoppingCart.Web",
+      "RelativePath": "ProductImage/9bfa2352-5e03-46a0-8e0d-3bb0c62291d0-261151_c9cqcw.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImage\\9bfa2352-5e03-46a0-8e0d-3bb0c62291d0-261151_c9cqcw.jpg"
+    },
+    {
+      "Identity": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\ProductImage\\fb3c60a1-e3c0-4056-83a6-d81a7bffb338-6156DBMN-RL._AC_UF1000,1000_QL80_.jpg",
+      "SourceId": "ShoppingCart.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\",
+      "BasePath": "_content/ShoppingCart.Web",
+      "RelativePath": "ProductImage/fb3c60a1-e3c0-4056-83a6-d81a7bffb338-6156DBMN-RL._AC_UF1000,1000_QL80_.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImage\\fb3c60a1-e3c0-4056-83a6-d81a7bffb338-6156DBMN-RL._AC_UF1000,1000_QL80_.jpg"
     }
   ]
 }

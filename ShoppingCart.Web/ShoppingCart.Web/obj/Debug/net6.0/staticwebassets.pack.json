@@ -5,8 +5,20 @@
       "PackagePath": "staticwebassets\\ShoppingCart.Web.bundle.scp.css"
     },
     {
+      "Id": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\ProductImage\\3a4ba824-8cd4-4198-bd6c-e294891a8687-jbl-xtreme-2-original-imafjf6kbpfwekqd.webp",
+      "PackagePath": "staticwebassets\\ProductImage\\3a4ba824-8cd4-4198-bd6c-e294891a8687-jbl-xtreme-2-original-imafjf6kbpfwekqd.webp"
+    },
+    {
       "Id": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\ProductImage\\8ddfe029-bb9b-41f0-a5ce-05c1108c971c-Wired-Earphone.jpg",
       "PackagePath": "staticwebassets\\ProductImage\\8ddfe029-bb9b-41f0-a5ce-05c1108c971c-Wired-Earphone.jpg"
+    },
+    {
+      "Id": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\ProductImage\\9bfa2352-5e03-46a0-8e0d-3bb0c62291d0-261151_c9cqcw.jpg",
+      "PackagePath": "staticwebassets\\ProductImage\\9bfa2352-5e03-46a0-8e0d-3bb0c62291d0-261151_c9cqcw.jpg"
+    },
+    {
+      "Id": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\ProductImage\\fb3c60a1-e3c0-4056-83a6-d81a7bffb338-6156DBMN-RL._AC_UF1000,1000_QL80_.jpg",
+      "PackagePath": "staticwebassets\\ProductImage\\fb3c60a1-e3c0-4056-83a6-d81a7bffb338-6156DBMN-RL._AC_UF1000,1000_QL80_.jpg"
     },
     {
       "Id": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\css\\Sketchy.css",
