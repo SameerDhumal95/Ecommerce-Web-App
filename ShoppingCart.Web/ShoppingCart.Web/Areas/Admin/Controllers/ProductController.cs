@@ -162,6 +162,9 @@ namespace ShoppingCart.Web.Areas.Admin.Controllers
         //  return View(category);
         // }
 
+
+
+
         #region DeleteAPICALL
         [HttpDelete]
         public IActionResult Delete(int? id)
