@@ -5,6 +5,8 @@ using ShoppingCart.Models;
 
 using System.Diagnostics;
 using Cart = ShoppingCart.Models.Cart;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace ShoppingCart.Web.Areas.Customer.Controllers
 {
@@ -37,6 +39,35 @@ namespace ShoppingCart.Web.Areas.Customer.Controllers
             };
             return View(cart);
         }
+
+        [HttpPost]
+        [Authorize]
+        [ValidateAntiForgeryToken]
+        public IActionResult Details(Cart cart)
+        {
+            if (ModelState.IsValid)
+            {
+                var claimsIdentity = (ClaimsIdentity)User.Identity;
+                var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+                cart.ApplicationUserId = claims.Value;
+
+                var cartItem = _unitOfWork.Cart.GetT(x => x.ProductId == cart.Product &&
+                x.ApplicationUserId == claims.Value);
+
+                if (cartItem == null)
+                {
+                    _unitOfWork.Cart.Add(cart);
+                    _unitOfWork.Save();
+                    HttpContext.Session.SetInt32("SessionCart", _unitOfWork
+                        .Cart.GetAll(x => x.ApplicationUserId == claims.Value).ToList().Count
+                        );
+                }
+            }
+        }
+
+
+
+
         public IActionResult Privacy()
         {
             return View();
