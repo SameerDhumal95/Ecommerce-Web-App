@@ -1,4 +1,5 @@
 ﻿using ShoppingCart.DataAccess.Data;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,13 +16,15 @@ namespace ShoppingCart.DataAccess.Repositories
 
         public IProductRepository Product { get; private set; }
 
-
+        public ICartRepository Cart { get; private set; }
 
         public UnitOfWork(ApplicationDbContext context)
         {
             _context = context;
             this.Category = new CategoryRepository(context);
             Product = new ProductRepository(context);
+
+            Cart = new CartRepository(context);
         }
 
         public void Save()

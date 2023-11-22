@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShoppingCart.DataAccess.Repositories;
-using 
+
 using ShoppingCart.Models;
 
 using System.Diagnostics;
@@ -51,8 +51,8 @@ namespace ShoppingCart.Web.Areas.Customer.Controllers
                 var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
                 cart.ApplicationUserId = claims.Value;
 
-                var cartItem = _unitOfWork.Cart.GetT(x => x.ProductId == cart.Product &&
-                x.ApplicationUserId == claims.Value);
+                var cartItem = _unitOfWork.Cart.GetT(x => x.ProductId == cart.Product.Id &&
+                                           x.ApplicationUserId == claims.Value);
 
                 if (cartItem == null)
                 {
@@ -62,7 +62,13 @@ namespace ShoppingCart.Web.Areas.Customer.Controllers
                         .Cart.GetAll(x => x.ApplicationUserId == claims.Value).ToList().Count
                         );
                 }
+                else
+                {
+                    _unitOfWork.Cart.IncrementCartItem(cartItem, cart.Count);
+                    _unitOfWork .Save();
+                }
             }
+            return RedirectToAction("Index");
         }
 
 

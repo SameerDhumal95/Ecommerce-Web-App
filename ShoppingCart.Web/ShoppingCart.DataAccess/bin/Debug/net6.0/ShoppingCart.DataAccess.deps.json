@@ -13,7 +13,8 @@
           "Microsoft.EntityFrameworkCore": "6.0.2",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.2",
           "Pomelo.EntityFrameworkCore.MySql": "6.0.0",
-          "ShoppingCart.Models": "1.0.0"
+          "ShoppingCart.Models": "1.0.0",
+          "ShoppingCart.Utility": "1.0.0"
         },
         "runtime": {
           "ShoppingCart.DataAccess.dll": {}
@@ -1454,6 +1455,11 @@
         "runtime": {
           "ShoppingCart.Models.dll": {}
         }
+      },
+      "ShoppingCart.Utility/1.0.0": {
+        "runtime": {
+          "ShoppingCart.Utility.dll": {}
+        }
       }
     }
   },
@@ -2472,6 +2478,11 @@
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
     "ShoppingCart.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ShoppingCart.Utility/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

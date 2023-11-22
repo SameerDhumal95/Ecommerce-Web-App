@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ShoppingCart.Models\ShoppingCart.Models.csproj" />
+    <ProjectReference Include="..\ShoppingCart.Utility\ShoppingCart.Utility.csproj" />
   </ItemGroup>
 
 </Project>

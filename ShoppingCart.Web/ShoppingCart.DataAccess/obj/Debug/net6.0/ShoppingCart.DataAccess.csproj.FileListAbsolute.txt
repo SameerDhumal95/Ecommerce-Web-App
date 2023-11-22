@@ -32,3 +32,5 @@ D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Web\ShoppingCart.DataAccess\obj
 D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Web\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.pdb
 D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Web\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.genruntimeconfig.cache
 D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Web\ShoppingCart.DataAccess\obj\Debug\net6.0\ref\ShoppingCart.DataAccess.dll
+D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Web\ShoppingCart.DataAccess\bin\Debug\net6.0\ShoppingCart.Utility.dll
+D:\C#\ASP Projects\ShoppingCart.Web\ShoppingCart.Web\ShoppingCart.DataAccess\bin\Debug\net6.0\ShoppingCart.Utility.pdb
