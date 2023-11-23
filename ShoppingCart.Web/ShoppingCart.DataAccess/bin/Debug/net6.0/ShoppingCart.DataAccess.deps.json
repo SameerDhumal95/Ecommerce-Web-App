@@ -11,21 +11,12 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.2",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
           "Microsoft.EntityFrameworkCore": "6.0.2",
-          "Microsoft.EntityFrameworkCore.Tools": "6.0.2",
           "Pomelo.EntityFrameworkCore.MySql": "6.0.0",
           "ShoppingCart.Models": "1.0.0",
           "ShoppingCart.Utility": "1.0.0"
         },
         "runtime": {
           "ShoppingCart.DataAccess.dll": {}
-        }
-      },
-      "Humanizer.Core/2.8.26": {
-        "runtime": {
-          "lib/netstandard2.0/Humanizer.dll": {
-            "assemblyVersion": "2.8.0.0",
-            "fileVersion": "2.8.26.1919"
-          }
         }
       },
       "Microsoft.AspNetCore.Antiforgery/2.2.0": {
@@ -433,18 +424,6 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/6.0.2": {},
-      "Microsoft.EntityFrameworkCore.Design/6.0.2": {
-        "dependencies": {
-          "Humanizer.Core": "2.8.26",
-          "Microsoft.EntityFrameworkCore.Relational": "6.0.2"
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
-            "assemblyVersion": "6.0.2.0",
-            "fileVersion": "6.0.222.6404"
-          }
-        }
-      },
       "Microsoft.EntityFrameworkCore.Relational/6.0.2": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.2",
@@ -455,11 +434,6 @@
             "assemblyVersion": "6.0.2.0",
             "fileVersion": "6.0.222.6404"
           }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Tools/6.0.2": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "6.0.2"
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
@@ -1469,13 +1443,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Humanizer.Core/2.8.26": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
-      "path": "humanizer.core/2.8.26",
-      "hashPath": "humanizer.core.2.8.26.nupkg.sha512"
-    },
     "Microsoft.AspNetCore.Antiforgery/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -1707,26 +1674,12 @@
       "path": "microsoft.entityframeworkcore.analyzers/6.0.2",
       "hashPath": "microsoft.entityframeworkcore.analyzers.6.0.2.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Design/6.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-U5nqbIKJ8LQF/T1BzMjL35mwhTPsEUsjLhX+GjPQcrKaavv6oczCdznhr7VbEmCmGSjQjSarNqXkSCneUX2mXA==",
-      "path": "microsoft.entityframeworkcore.design/6.0.2",
-      "hashPath": "microsoft.entityframeworkcore.design.6.0.2.nupkg.sha512"
-    },
     "Microsoft.EntityFrameworkCore.Relational/6.0.2": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-yZARjY5P+jtCpoAogk5mOfdplATHow5gQugMje6F3cZFPKtF1UtJLGRyxVsNX4hCEWbSq/W+1AbXLCMQ1jOiSw==",
       "path": "microsoft.entityframeworkcore.relational/6.0.2",
       "hashPath": "microsoft.entityframeworkcore.relational.6.0.2.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.Tools/6.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-343UATonlpl+D+PWm0Lms4mn1JEvFrwrRgIWADYaonHNHEZiparOBQtPXuibrYYPF7OQa6QXJXVGfSzZf3xgkw==",
-      "path": "microsoft.entityframeworkcore.tools/6.0.2",
-      "hashPath": "microsoft.entityframeworkcore.tools.6.0.2.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
       "type": "package",
