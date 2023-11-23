@@ -2449,16 +2449,6 @@
         "runtime": {
           "bin/placeholder/ShoppingCart.Models.dll": {}
         }
-      },
-      "ShoppingCart.Utility/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/ShoppingCart.Utility.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ShoppingCart.Utility.dll": {}
-        }
       }
     }
   },
@@ -7218,11 +7208,6 @@
       "type": "project",
       "path": "../ShoppingCart.Models/ShoppingCart.Models.csproj",
       "msbuildProject": "../ShoppingCart.Models/ShoppingCart.Models.csproj"
-    },
-    "ShoppingCart.Utility/1.0.0": {
-      "type": "project",
-      "path": "../ShoppingCart.Utility/ShoppingCart.Utility.csproj",
-      "msbuildProject": "../ShoppingCart.Utility/ShoppingCart.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7231,8 +7216,7 @@
       "Microsoft.AspNetCore.Mvc.ViewFeatures >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 6.0.2",
       "Pomelo.EntityFrameworkCore.MySql >= 6.0.0",
-      "ShoppingCart.Models >= 1.0.0",
-      "ShoppingCart.Utility >= 1.0.0"
+      "ShoppingCart.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7264,9 +7248,6 @@
           "projectReferences": {
             "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Models\\ShoppingCart.Models.csproj": {
               "projectPath": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Models\\ShoppingCart.Models.csproj"
-            },
-            "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Utility\\ShoppingCart.Utility.csproj": {
-              "projectPath": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Utility\\ShoppingCart.Utility.csproj"
             }
           }
         }

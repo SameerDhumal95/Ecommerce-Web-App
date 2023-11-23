@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 
 namespace ShoppingCart.Models
 {
+   
+
     public class ApplicationUser:IdentityUser
     {
         [Required]

@@ -2865,8 +2865,7 @@
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
           "Microsoft.EntityFrameworkCore": "6.0.25",
           "Pomelo.EntityFrameworkCore.MySql": "6.0.0",
-          "ShoppingCart.Models": "1.0.0",
-          "ShoppingCart.Utility": "1.0.0"
+          "ShoppingCart.Models": "1.0.0"
         },
         "runtime": {
           "ShoppingCart.DataAccess.dll": {}
@@ -2882,6 +2881,10 @@
         }
       },
       "ShoppingCart.Utility/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.23",
+          "ShoppingCart.DataAccess": "1.0.0"
+        },
         "runtime": {
           "ShoppingCart.Utility.dll": {}
         }

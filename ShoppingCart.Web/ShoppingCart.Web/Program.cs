@@ -3,7 +3,8 @@ using ShoppingCart.DataAccess.Data;
 using ShoppingCart.DataAccess.Repositories;
 using System;
 using Microsoft.AspNetCore.Identity;
-using ShoppingCart.Web.Data;
+using Microsoft.EntityFrameworkCore.Internal;
+using ShoppingCart.Utility.DbInitializer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,14 +15,16 @@ builder.Services.AddControllersWithViews();
 var connectionString = builder.Configuration.GetConnectionString("AppDbConnectionString");
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
-builder.Services.AddDefaultIdentity<IdentityUser>()
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+//builder.Services.AddScoped<IDbInitializer, DbInitializerRepo>();
+
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
-
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -35,13 +38,21 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+//dataSedding();
+
 app.UseAuthentication();;
-
 app.UseAuthorization();
-
 app.MapRazorPages();
 app.MapControllerRoute(
     name: "default",
     pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+//void dataSedding()
+//{
+//    using (var scope = app.Services.CreateScope())
+//    {
+//        var DbInitializer = scope.ServiceProvider.GetRequiredService<IDbInitializer>();
+//        DbInitializer.Initializer();
+//    }
+//}

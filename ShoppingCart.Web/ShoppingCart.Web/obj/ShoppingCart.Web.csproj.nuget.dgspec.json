@@ -30,9 +30,6 @@
             "projectReferences": {
               "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Models\\ShoppingCart.Models.csproj": {
                 "projectPath": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Models\\ShoppingCart.Models.csproj"
-              },
-              "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Utility\\ShoppingCart.Utility.csproj": {
-                "projectPath": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Utility\\ShoppingCart.Utility.csproj"
               }
             }
           }
@@ -149,14 +146,14 @@
         }
       }
     },
-    "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Utility\\ShoppingCart.Utility.csproj": {
+    "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Utility1\\ShoppingCart.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Utility\\ShoppingCart.Utility.csproj",
+        "projectUniqueName": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Utility1\\ShoppingCart.Utility.csproj",
         "projectName": "ShoppingCart.Utility",
-        "projectPath": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Utility\\ShoppingCart.Utility.csproj",
+        "projectPath": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Utility1\\ShoppingCart.Utility.csproj",
         "packagesPath": "C:\\Users\\Sameer-PC\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Utility\\obj\\",
+        "outputPath": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Utility1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sameer-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -172,7 +169,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj": {
+                "projectPath": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -184,6 +185,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -234,8 +241,8 @@
               "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Models\\ShoppingCart.Models.csproj": {
                 "projectPath": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Models\\ShoppingCart.Models.csproj"
               },
-              "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Utility\\ShoppingCart.Utility.csproj": {
-                "projectPath": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Utility\\ShoppingCart.Utility.csproj"
+              "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Utility1\\ShoppingCart.Utility.csproj": {
+                "projectPath": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Utility1\\ShoppingCart.Utility.csproj"
               }
             }
           }

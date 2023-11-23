@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ienCjcF1errT2J4DmLjv66J/3rkGBSdjl81DP0ujqMkRGqkyJTM/GJnsSYaXjheMxgzm+CsT+GJIB/7yLAarmQ==",
+  "dgSpecHash": "uuWU1cd+S7rTmmRP2ERMcrXOsCsJQmh2lJOGn80PNKuuBGpEP054KqH9zW1/shqpLrhFjzpSeh8SOncGYhwyTQ==",
   "success": true,
   "projectFilePath": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj",
   "expectedPackageFiles": [

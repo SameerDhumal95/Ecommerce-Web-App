@@ -4568,8 +4568,7 @@
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
           "Microsoft.EntityFrameworkCore": "6.0.2",
           "Pomelo.EntityFrameworkCore.MySql": "6.0.0",
-          "ShoppingCart.Models": "1.0.0",
-          "ShoppingCart.Utility": "1.0.0"
+          "ShoppingCart.Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ShoppingCart.DataAccess.dll": {}
@@ -4595,6 +4594,10 @@
       "ShoppingCart.Utility/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.2",
+          "ShoppingCart.DataAccess": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/ShoppingCart.Utility.dll": {}
         },
@@ -12506,8 +12509,8 @@
     },
     "ShoppingCart.Utility/1.0.0": {
       "type": "project",
-      "path": "../ShoppingCart.Utility/ShoppingCart.Utility.csproj",
-      "msbuildProject": "../ShoppingCart.Utility/ShoppingCart.Utility.csproj"
+      "path": "../ShoppingCart.Utility1/ShoppingCart.Utility.csproj",
+      "msbuildProject": "../ShoppingCart.Utility1/ShoppingCart.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12556,8 +12559,8 @@
             "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Models\\ShoppingCart.Models.csproj": {
               "projectPath": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Models\\ShoppingCart.Models.csproj"
             },
-            "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Utility\\ShoppingCart.Utility.csproj": {
-              "projectPath": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Utility\\ShoppingCart.Utility.csproj"
+            "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Utility1\\ShoppingCart.Utility.csproj": {
+              "projectPath": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Utility1\\ShoppingCart.Utility.csproj"
             }
           }
         }
