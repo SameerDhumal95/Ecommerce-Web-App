@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "coEA0fF6P0lUJBwjm3dD+DC+IYXSObO7efipNnNgH+s=",
+  "Hash": "59cF0YLDw150k/PiOEuj9XmougRZXOfTyWnALlsjlc8=",
   "Source": "ShoppingCart.Web",
   "BasePath": "_content/ShoppingCart.Web",
   "Mode": "Default",
@@ -2123,6 +2123,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\ProductImage\\37e88fed-abfc-4550-80a0-2252634310ce-eyebogler-men-s-polo-neck-regular-fit-half-sleeves-colorblocked-teal-t-shirt-product-images-rvowvf0akl-0-202211051905.webp",
+      "SourceId": "ShoppingCart.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\",
+      "BasePath": "_content/ShoppingCart.Web",
+      "RelativePath": "ProductImage/37e88fed-abfc-4550-80a0-2252634310ce-eyebogler-men-s-polo-neck-regular-fit-half-sleeves-colorblocked-teal-t-shirt-product-images-rvowvf0akl-0-202211051905.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImage\\37e88fed-abfc-4550-80a0-2252634310ce-eyebogler-men-s-polo-neck-regular-fit-half-sleeves-colorblocked-teal-t-shirt-product-images-rvowvf0akl-0-202211051905.webp"
     },
     {
       "Identity": "D:\\C#\\ASP Projects\\ShoppingCart.Web\\ShoppingCart.Web\\ShoppingCart.Web\\wwwroot\\ProductImage\\3a4ba824-8cd4-4198-bd6c-e294891a8687-jbl-xtreme-2-original-imafjf6kbpfwekqd.webp",
