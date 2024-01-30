@@ -5,6 +5,8 @@ using System;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore.Internal;
 using ShoppingCart.Utility.DbInitializer;
+using ShoppingCart.Utility;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,7 +22,8 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-//builder.Services.AddScoped<IDbInitializer, DbInitializerRepo>();
+builder.Services.AddScoped<IDbInitializer, DbInitializerRepo>();
+builder.Services.AddScoped<IEmailSender,EmailSender>();
 
 builder.Services.AddRazorPages();
 
@@ -38,7 +41,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-//dataSedding();
+dataSedding();
 
 app.UseAuthentication();;
 app.UseAuthorization();
@@ -48,11 +51,11 @@ app.MapControllerRoute(
     pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
-//void dataSedding()
-//{
-//    using (var scope = app.Services.CreateScope())
-//    {
-//        var DbInitializer = scope.ServiceProvider.GetRequiredService<IDbInitializer>();
-//        DbInitializer.Initializer();
-//    }
-//}
+void dataSedding()
+{
+    using (var scope = app.Services.CreateScope())
+    {
+        var DbInitializer = scope.ServiceProvider.GetRequiredService<IDbInitializer>();
+        DbInitializer.Initializer();
+    }
+}

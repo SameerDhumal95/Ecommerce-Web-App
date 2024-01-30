@@ -6,6 +6,8 @@ namespace ShoppingCart.Web.Areas.Customer.Controllers
     {
         public Cart Cart { get; set; } = new Cart();
 
-        //public IEnumerable<Cart> cart { get; set; } = new List<Cart>();
+        public IEnumerable<Cart> ListOfCart { get; set; } = new List<Cart>();
+
+        public OrderHeader OrderHeader { get; set; } = new OrderHeader();
     }
 }

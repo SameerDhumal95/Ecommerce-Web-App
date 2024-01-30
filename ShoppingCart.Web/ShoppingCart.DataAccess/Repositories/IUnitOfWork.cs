@@ -13,6 +13,9 @@ namespace ShoppingCart.DataAccess.Repositories
 
         ICartRepository Cart { get; }
 
+        IOrderHeaderRepository OrderHeader { get; }
+        
+        IOrderDetailRepository OrderDetails { get; }
         void Save();
     }
 }

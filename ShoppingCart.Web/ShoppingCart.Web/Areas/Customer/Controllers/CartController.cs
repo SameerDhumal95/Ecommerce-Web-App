@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ShoppingCart.DataAccess.Repositories;
+using ShoppingCart.Models;
 using System.Security.Claims;
 
 namespace ShoppingCart.Web.Areas.Customer.Controllers
@@ -9,13 +10,13 @@ namespace ShoppingCart.Web.Areas.Customer.Controllers
     [Authorize]
     public class CartController : Controller
     {
-        private IUnitOfWork unitOfWork;
+        private readonly UnitOfWork _unitOfWork;
 
         public CartVM vm {  get; set; }
 
-        public CartController(IUnitOfWork unitOfWork)
+        public CartController(UnitOfWork _unitOfWork)
         {
-            this.unitOfWork = unitOfWork;
+            this._unitOfWork = _unitOfWork;
         }
         public IActionResult Index()
         {
@@ -24,7 +25,7 @@ namespace ShoppingCart.Web.Areas.Customer.Controllers
 
             vm = new CartVM()
             {
-                ListOfCart = _unitOfWork.Cart.GetAll(x => x.ApplicationUserId == claims.Value, includeProperties:"Product"),
+                ListOfCart = _unitOfWork.Cart.GetAll(x => x.ApplicationUserId == claims.Value, includeProperties: "Product"),
                 OrderHeader = new OrderHeader()
             };
 

@@ -4739,6 +4739,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.2",
+          "Microsoft.AspNetCore.Identity.UI": "6.0.23",
           "ShoppingCart.DataAccess": "1.0.0"
         },
         "compile": {
